@@ -1,3 +1,5 @@
+
+
 // Hey Iron Yard Hackers! Enjoy!
 // Make sure to open your js consoles!
 
@@ -35,11 +37,36 @@ function expect(target) {
 // / /__/ /_/ / / / (__  ) /_/ /  / /_/ / /__/ /_/ /_/ / /  (__  )
 // \___/\____/_/ /_/____/\__/_/   \__,_/\___/\__/\____/_/  /____/
 //
-// Only add code to *THIS* section!
+// Only add code to *THIS* section
+// var Dog = {};
+//
+//   sadie.pet = function(line) {
+//     this.status = 'happy';
+//   };
 
-// ????????
-// ????????
-// ????????
+var Human =function(){
+
+};
+
+function Dog(traits){
+  this.status="normal";
+  this.color="black";
+  this.hungry = 
+}
+
+Human.prototype.pet= function(dog){
+  dog.status ='happy';
+};
+
+Human.prototype.feed= function(dog){
+  dog.hungry=false;
+};
+//   this.hungry="true";
+// }
+//
+// Human.prototype.feed= function(dog){
+//   dog.hungry='false';
+// };
 
 
 //        __
