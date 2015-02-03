@@ -44,15 +44,41 @@ function expect(target) {
 //     this.status = 'happy';
 //   };
 
-var Human =function(){
 
-};
+// ==========The point of constructors is to keep from repetion which speeds up browser function and also
+// ==========helps prevent errors when dealing with multiple "items" in a "catagory". Besides why in the heck
+// ==========would you want to type the extra code???
+
+// What I need associated with Humans
+  // 1.
+// var cool = true;
+//
+// var Human =function(cool, owner){
+//   this.cool = cool;
+//   this.owner = owner;
+//   if (cool = true){
+//     console.log(true)}
+//   // }  else {
+//   //   console.log(false);
+//   // }
+//   this.owner = undefined;
+// };
+
+function Human(cool, owner){
+  this.cool="false";
+  this.owner="undefined";
+}
 
 function Dog(traits){
   this.status="normal";
   this.color="black";
-  this.hungry = 
+  this.hungry=hungry;
 }
+
+var hungry = true;
+
+var sadie = 'Dog';
+  // hungry = 'false';
 
 Human.prototype.pet= function(dog){
   dog.status ='happy';
