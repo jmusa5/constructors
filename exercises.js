@@ -51,7 +51,6 @@ function expect(target) {
 
 
 
-var cool = cool;
 //
 // var Human =function(cool, owner){
 //   this.cool = cool;
@@ -64,21 +63,27 @@ var cool = cool;
 //   this.owner = undefined;
 // };
 
+
+
+// ==========below seems like it should be working but is not===========
+
 function Human(cool, owner) {
   this.cool = cool; {
-  if (this.cool = true) {
-      return (true);
+  if (this.cool = 'true') {
+      return(true);
 }   else {
-      return (false);
+      return(false);
     }
 }
 }
 
 
+// =========this below has me baffled i have tried to many ways but this is the only progress
+
 function Dog(status, color, hungry){
-  this.status = "normal";
-  this.color = "black";
-  this.hungry = false;
+  this.status = 'normal';
+  this.color = 'black';
+  this.hungry = true;
 }
 
 // var sadie = new Dog('normal', 'black', true);
@@ -94,7 +99,9 @@ Human.prototype.feed= function(dog){
 };
 
 Human.prototype.cool= function(human){
-  human.cool= true;
+  // human.cool = false;
+  julia.cool = true;
+  mason.cool = false;
 };
 
 
