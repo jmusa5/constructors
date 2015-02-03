@@ -50,7 +50,8 @@ function expect(target) {
 // ==========would you want to type the extra code???
 
 
-// var cool = true;
+
+var cool = cool;
 //
 // var Human =function(cool, owner){
 //   this.cool = cool;
@@ -63,10 +64,16 @@ function expect(target) {
 //   this.owner = undefined;
 // };
 
-function Human(cool, owner){
-  this.cool = true;
-  this.owner = owner;
+function Human(cool, owner) {
+  this.cool = cool; {
+  if (this.cool = true) {
+      return (true);
+}   else {
+      return (false);
+    }
 }
+}
+
 
 function Dog(status, color, hungry){
   this.status = "normal";
@@ -74,10 +81,6 @@ function Dog(status, color, hungry){
   this.hungry = false;
 }
 
-
-var Moonshine = {
-  hungry: true
-};
 // var sadie = new Dog('normal', 'black', true);
 // var moonshine = new Dog('normal', "blue-red", true);
 
