@@ -49,8 +49,7 @@ function expect(target) {
 // ==========helps prevent errors when dealing with multiple "items" in a "catagory". Besides why in the heck
 // ==========would you want to type the extra code???
 
-// What I need associated with Humans
-  // 1.
+
 // var cool = true;
 //
 // var Human =function(cool, owner){
@@ -65,28 +64,37 @@ function expect(target) {
 // };
 
 function Human(cool, owner){
-  this.cool="false";
-  this.owner="undefined";
+  this.cool = true;
+  this.owner = owner;
 }
 
-function Dog(traits){
-  this.status="normal";
-  this.color="black";
-  this.hungry=hungry;
+function Dog(status, color, hungry){
+  this.status = "normal";
+  this.color = "black";
+  this.hungry = false;
 }
 
-var hungry = true;
 
-var sadie = 'Dog';
-  // hungry = 'false';
+var Moonshine = {
+  hungry: true
+};
+// var sadie = new Dog('normal', 'black', true);
+// var moonshine = new Dog('normal', "blue-red", true);
 
 Human.prototype.pet= function(dog){
-  dog.status ='happy';
+  dog.status = 'happy';
 };
 
 Human.prototype.feed= function(dog){
-  dog.hungry=false;
+  dog.hungry= false;
+
 };
+
+Human.prototype.cool= function(human){
+  human.cool= true;
+};
+
+
 //   this.hungry="true";
 // }
 //
